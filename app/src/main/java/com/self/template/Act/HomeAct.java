@@ -1,17 +1,12 @@
 package com.self.template.Act;
 
-import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.RadioButton;
-import android.widget.Toast;
 
-import com.self.template.Fragment.AFragment;
+import com.self.template.Fragment.Fragment_home;
 import com.self.template.Fragment.BFragment;
 import com.self.template.Fragment.CFragment;
 import com.self.template.Fragment.DFragment;
@@ -46,7 +41,7 @@ public class HomeAct extends FragmentActivity {
         setContentView(R.layout.win_home);
 
         //添加碎片
-        fragments.add(AFragment.newInstance());
+        fragments.add(Fragment_home.newInstance());
         fragments.add(BFragment.newInstance());
         fragments.add(CFragment.newInstance());
         fragments.add(DFragment.newInstance());
