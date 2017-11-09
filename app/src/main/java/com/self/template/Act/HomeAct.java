@@ -9,7 +9,7 @@ import android.widget.RadioButton;
 import com.self.template.Fragment.Fragment_home;
 import com.self.template.Fragment.BFragment;
 import com.self.template.Fragment.CFragment;
-import com.self.template.Fragment.DFragment;
+import com.self.template.Fragment.Fragment_mine;
 import com.self.template.R;
 import com.self.template.Util.FragmentTabHandler;
 import com.self.template.View.FlowRadioGroup;
@@ -44,7 +44,7 @@ public class HomeAct extends FragmentActivity {
         fragments.add(Fragment_home.newInstance());
         fragments.add(BFragment.newInstance());
         fragments.add(CFragment.newInstance());
-        fragments.add(DFragment.newInstance());
+        fragments.add(Fragment_mine.newInstance());
 
         rgs = (FlowRadioGroup) findViewById(R.id.tabMain);
 

@@ -6,8 +6,8 @@ package com.self.template.history;
 
 public class record {
 
-    public String getName() {
-        return name;
+    public String getTime() {
+        return time;
     }
 
     public String getLocation() {
@@ -18,13 +18,13 @@ public class record {
         return state;
     }
 
-    public record(String name, String location, String state) {
-        this.name = name;
+    public record(String time, String location, String state) {
+        this.time = time;
         this.location = location;
         this.state = state;
     }
 
-    private String name;
+    private String time;
     private String location;
     private String state;
 

@@ -11,8 +11,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/time"
             style="@style/AlertDialog.AppCompat.Light"
-            android:text="预约时间 2017-04-26 11:30至12:00"
+
             android:textSize="20dp"
             android:layout_weight="0.14"
             />
@@ -20,16 +21,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/location"
             style="@style/AlertDialog.AppCompat.Light"
-            android:text="预约位置 【桂苑食堂一楼 08】"
+
             android:textSize="20dp"
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/state"
             style="@style/AlertDialog.AppCompat.Light"
-            android:text="预约状态 已就坐"
+
             android:textSize="20dp"
 
             />
