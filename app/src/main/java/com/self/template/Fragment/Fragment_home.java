@@ -1,6 +1,14 @@
 package com.self.template.Fragment;
 
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
+
 import com.self.template.R;
+import com.self.template.food.FoodAdapter;
 import com.self.template.food.food;
 
 import java.util.ArrayList;
@@ -31,6 +39,16 @@ public class Fragment_home extends BaseFragment{
     public void onResume() {
         super.onResume();
 
+    }
+
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        initFoods();
+        FoodAdapter adapter=new FoodAdapter(getContext(),R.layout.listview,foodList);         //getContext()
+        ListView listView=(ListView)rootView.findViewById(R.id.listview);
+        listView.setAdapter(adapter);
+        return rootView;
     }
 
     private void initFoods() {
