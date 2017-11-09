@@ -30,6 +30,6 @@ public class DFragment extends BaseFragment{
 
     @Override
     protected int layoutId() {
-        return R.layout.tab_d;
+        return R.layout.fragment_mine;
     }
 }

@@ -29,6 +29,6 @@ public class BFragment extends BaseFragment{
 
     @Override
     protected int layoutId() {
-        return R.layout.tab_b;
+        return R.layout.fragment_find;
     }
 }
