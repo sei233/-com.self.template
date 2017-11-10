@@ -39,11 +39,12 @@
                     android:src="@drawable/ic_location_on_black_24dp" />
 
                 <Spinner
-                    android:layout_width="100dp"
+                    android:id="@+id/spinner"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    >
-
-                </Spinner>
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.46"
+                    android:entries="@array/location" />
 
                 <ImageView
                     android:layout_width="20dp"
