@@ -7,7 +7,7 @@ import android.view.Window;
 import android.widget.RadioButton;
 
 import com.self.template.Fragment.Fragment_home;
-import com.self.template.Fragment.BFragment;
+import com.self.template.Fragment.Fragment_find;
 import com.self.template.Fragment.CFragment;
 import com.self.template.Fragment.Fragment_mine;
 import com.self.template.R;
@@ -42,7 +42,7 @@ public class HomeAct extends FragmentActivity {
 
         //添加碎片
         fragments.add(Fragment_home.newInstance());
-        fragments.add(BFragment.newInstance());
+        fragments.add(Fragment_find.newInstance());
         fragments.add(CFragment.newInstance());
         fragments.add(Fragment_mine.newInstance());
 

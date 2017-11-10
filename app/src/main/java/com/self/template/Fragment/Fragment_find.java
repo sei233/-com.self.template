@@ -11,10 +11,10 @@ import com.self.template.R;
  *     version: 1.0
  * </pre>
  */
-public class BFragment extends BaseFragment{
+public class Fragment_find extends BaseFragment{
 
-    public static BFragment newInstance() {
-        BFragment f = new BFragment();
+    public static Fragment_find newInstance() {
+        Fragment_find f = new Fragment_find();
         return f;
     }
 
