@@ -8,7 +8,8 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:background="@color/colorAccent">
+        android:background="@color/colorAccent"
+        android:weightSum="1">
 
 
 
@@ -21,26 +22,19 @@
                 android:layout_centerVertical="true"
                 android:background="@drawable/ic_restaurant" />
 
-            <android.support.v7.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_toEndOf="@+id/button"
-                android:layout_toRightOf="@+id/button"
-                android:gravity="center"
-                android:text="浙江师范大"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
+
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="31dp"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_toEndOf="@+id/button"
-            android:layout_toRightOf="@+id/button"></Spinner>
+            android:layout_toRightOf="@+id/button"
+            android:entries="@array/location"
+            android:layout_weight="0.46" />
 
         <EditText
             android:id="@+id/editText"
