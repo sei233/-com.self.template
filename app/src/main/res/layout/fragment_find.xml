@@ -59,7 +59,6 @@
         android:orientation="vertical">
 
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -69,13 +68,13 @@
             <View
                 android:id="@+id/view01"
                 android:layout_width="130dp"
-                android:layout_height="5dp"
-                android:layout_weight="8"
-                android:gravity="center"
-                android:background="#CCCCCC"
-                android:layout_centerVertical="true"
+                android:layout_height="4dp"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="8"
+                android:background="#CCCCCC"
+                android:gravity="center" />
 
             <TextView
                 style="@style/AlertDialog.AppCompat.Light"
@@ -88,13 +87,13 @@
             <View
                 android:id="@+id/view0"
                 android:layout_width="130dp"
-                android:layout_height="5dp"
-                android:layout_weight="8"
-                android:gravity="center"
-                android:background="#CCCCCC"
-                android:layout_alignTop="@+id/view01"
+                android:layout_height="4dp"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignTop="@+id/view01"
+                android:layout_weight="8"
+                android:background="#CCCCCC"
+                android:gravity="center" />
         </RelativeLayout>
 
         <LinearLayout
@@ -140,13 +139,13 @@
             <View
                 android:id="@+id/view1"
                 android:layout_width="130dp"
-                android:layout_height="5dp"
-                android:layout_weight="10"
-                android:gravity="center"
-                android:background="#CCCCCC"
-                android:layout_centerVertical="true"
+                android:layout_height="4dp"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="10"
+                android:background="#CCCCCC"
+                android:gravity="center" />
 
             <TextView
                 style="@style/AlertDialog.AppCompat.Light"
@@ -159,64 +158,88 @@
             <View
                 android:id="@+id/view2"
                 android:layout_width="130dp"
-                android:layout_height="5dp"
-                android:layout_weight="10"
-                android:gravity="center"
-                android:background="#CCCCCC"
-                android:layout_alignTop="@+id/view1"
+                android:layout_height="4dp"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignTop="@+id/view1"
+                android:layout_weight="10"
+                android:background="#CCCCCC"
+                android:gravity="center" />
         </RelativeLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                style="@style/AlertDialog.AppCompat.Light"
                 android:layout_weight="1"
-                android:text="限时抢购" />
-        </LinearLayout>
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+                <TextView
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限时抢购" />
+            </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                style="@style/AlertDialog.AppCompat.Light"
                 android:layout_weight="1"
-                android:text="今日特价"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                />
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_search_black_24dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+                <TextView
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日特价" />
+            </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                style="@style/AlertDialog.AppCompat.Light"
                 android:layout_weight="1"
-                android:text="一元福利袋"
-                />
-        </LinearLayout>
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+                <TextView
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一元福利袋" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#CCCCCC"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -224,7 +247,6 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
     </LinearLayout>
 </LinearLayout>
