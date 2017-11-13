@@ -44,25 +44,10 @@ public class Fragment_mine extends BaseFragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_mine, container, false);
-        initRecords();
-        RecordAdapter adapter=new RecordAdapter(getContext(),R.layout.listview_history,recordsList);         //getContext()
-        ListView listView=(ListView)rootView.findViewById(R.id.listview_history);
-        listView.setAdapter(adapter);
         return rootView;
     }
 
-    private void initRecords() {
-        for (int i = 0; i < 2; i++) {
-            record yesterday = new record("预约时间 2017-04-26 11:30至12:00",
-                    "预约位置 【桂苑食堂一楼 08】",
-                    "预约状态 未就坐");
-            recordsList.add(yesterday);
-            record today = new record("预约时间 2017-04-26 11:30至12:00",
-                    "预约位置 【杏园食堂二楼 23】",
-                    "预约状态 已就坐");
-            recordsList.add(today);
-        }
-    }
+
 
     @Override
     protected int layoutId() {
