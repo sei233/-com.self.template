@@ -314,6 +314,29 @@
                 app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
                 app:sRightViewMarginRight="16dp" />
 
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftIconRes="@drawable/ic_hand"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="会员福利"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftIconRes="@drawable/ic_star"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="我的关注"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
 
         </LinearLayout>
     </ScrollView>
