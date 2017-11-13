@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -32,20 +33,21 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="#000000"
-                android:gravity="center_vertical">
+                android:background="#000000">
 
 
-                <ImageButton
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/imageButton"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginStart="32dp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginStart="26dp"
+                    android:padding="1dp"
+                    android:src="@drawable/hetang" />
+
 
                 <TextView
                     android:id="@+id/textView1"
@@ -58,15 +60,63 @@
                     android:layout_marginTop="10dp"
                     android:layout_toEndOf="@+id/imageButton"
                     android:layout_toRightOf="@+id/imageButton"
-                    android:text="XX先生"
+                    android:text="卡卡"
                     android:textColor="#FCFCFC"
                     android:textSize="20dp" />
 
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_alignTop="@+id/textView2"
+                    android:padding="2sp"
+                    android:src="@drawable/ic_setting" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/AlertDialog.AppCompat.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_alignTop="@+id/textView1"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="35dp"
+                    android:text="小白生活家"
+                    android:textColor="#EEC591"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:padding="2sp"
+                    android:src="@drawable/ic_qrcode" />
+
             </RelativeLayout>
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="    我的饭友"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
+                android:layout_height="60dp"
+                android:background="#FFFFFF"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -78,10 +128,12 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/ic_search_black_24dp" />
+                        android:src="@drawable/ic_package"
+                        android:padding="2dp"
+                        />
 
                     <TextView
                         style="@style/AlertDialog.AppCompat.Light"
@@ -96,15 +148,43 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/ic_search_black_24dp" />
+                        android:src="@drawable/ic_gift"
+                        android:padding="3dp"
+                        />
+
+                    <TextView
+                        style="@style/AlertDialog.AppCompat.Light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卡包"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_heart"
+ />
 
                     <TextView
                         style="@style/AlertDialog.AppCompat.Light"
@@ -124,20 +204,115 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/ic_search_black_24dp" />
+                        android:src="@drawable/ic_message"
+                        android:padding="4dp"
+                        />
 
                     <TextView
                         style="@style/AlertDialog.AppCompat.Light"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="卡包"
+                        android:text="待评价"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_money" />
+
+                    <TextView
+                        style="@style/AlertDialog.AppCompat.Light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="售后服务"
 
                         />
                 </LinearLayout>
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC" />
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftIconRes="@drawable/ic_ding"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="我的预定"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftIconRes="@drawable/ic_letter"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="我的消息"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC" />
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftIconRes="@drawable/ic_people"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="优惠券"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftIconRes="@drawable/ic_bag"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="优先购"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
+
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:sBottomDividerLineMarginLR="16dp"
+                app:sLeftIconRes="@drawable/ic_gif"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="18sp"
+                app:sLeftTextString="礼品卡"
+                app:sRightTextGravity="center"
+                app:sRightTvDrawableRight="@drawable/ic_chevron_right_black_24dp"
+                app:sRightViewMarginRight="16dp" />
 
 
         </LinearLayout>
