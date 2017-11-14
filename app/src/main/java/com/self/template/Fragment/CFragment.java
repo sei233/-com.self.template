@@ -30,6 +30,6 @@ public class CFragment extends BaseFragment{
 
     @Override
     protected int layoutId() {
-        return R.layout.tab_c;
+        return R.layout.fragment_order;
     }
 }
