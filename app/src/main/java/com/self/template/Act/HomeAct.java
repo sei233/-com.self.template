@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.RadioButton;
 
-import com.self.template.Fragment.Fragment_home;
+import com.self.template.Fragment.Fragment_order;
 import com.self.template.Fragment.Fragment_find;
-import com.self.template.Fragment.CFragment;
+import com.self.template.Fragment.Fragment_home;
 import com.self.template.Fragment.Fragment_mine;
 import com.self.template.R;
 import com.self.template.Util.FragmentTabHandler;
@@ -43,7 +43,7 @@ public class HomeAct extends FragmentActivity {
         //添加碎片
         fragments.add(Fragment_home.newInstance());
         fragments.add(Fragment_find.newInstance());
-        fragments.add(CFragment.newInstance());
+        fragments.add(Fragment_order.newInstance());
         fragments.add(Fragment_mine.newInstance());
 
         rgs = (FlowRadioGroup) findViewById(R.id.tabMain);

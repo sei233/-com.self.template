@@ -30,19 +30,19 @@
         <RadioButton
             android:id="@+id/btnNews"
             style="@style/main_tab"
-            android:drawableTop="@drawable/btn_home_selector"
+            android:drawableTop="@drawable/btn_find_selector"
             android:text="发现" />
 
         <RadioButton
             android:id="@+id/btnDiscovery"
             style="@style/main_tab"
-            android:drawableTop="@drawable/btn_home_selector"
+            android:drawableTop="@drawable/btn_seat_selector"
             android:text="订座" />
 
         <RadioButton
             android:id="@+id/btnMe"
             style="@style/main_tab"
-            android:drawableTop="@drawable/btn_home_selector"
+            android:drawableTop="@drawable/btn_mine_selector"
             android:text="我的" />
 
     </com.self.template.View.FlowRadioGroup>
